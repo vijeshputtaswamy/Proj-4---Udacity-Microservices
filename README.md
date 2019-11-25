@@ -42,3 +42,25 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 3. Create Flask app in Container
 4. Run via kubectl
 5. run ./make_prediction.sh to send a request and output the logs to kubernetes_out.txt
+
+### Files in the repository ###
+
+1. app.py : The python flask app
+
+2. Dockerfile : file that contains instructions to build a docker image.
+
+3. Makefile : file that is used to setup and build the project and mainly used for linting the dockerfile.
+ 
+4. make_prediction.sh : script which is used to run a query against the machine learning API running on port 8000.
+
+5. requirements.txt : file that describes the dependencies required by the python application.
+
+6. run_docker.sh : script to build, tag and run a docker image.
+
+7. upload_docker.sh: script to push/upload a docker image to the docker hub.
+
+8. run_kubernetes.sh : script to download a docker image from the docker hub and run this image locally on kubernetes.
+
+9. model_data : folder which contains the machine learning model and associated files.
+
+10. output_txt_files : folder which contains the log info : docker_out.txt and kubernetes_out.txt.
