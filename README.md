@@ -23,20 +23,22 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ---
 
-## Setup the Environment
+### Setup the Environment ###
 
-* Create a virtualenv and activate it
-* Run `make install` to install the necessary dependencies
+1. Create a virtualenv and activate it.
+2. Run `make install` to install the necessary dependencies.
+3. You will also need to install Docker, Hadolint, Kubernetes(minikube).
 
-### Running `app.py`
+### Running `app.py` ###
 
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
-### Kubernetes Steps
+### Kubernetes Steps ###
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+1. Setup and Configure Docker locally
+2. Setup and Configure Kubernetes locally
+3. Create Flask app in Container
+4. Run via kubectl
+5. run ./make_prediction.sh to send a request and output the logs to kubernetes_out.txt
