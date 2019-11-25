@@ -1,0 +1,10 @@
+(.devops) Vijeshs-Air:project-ml-microservice-kubernetes vijesh$ kubectl get pod
+NAME              READY   STATUS    RESTARTS   AGE
+udacitymicrosvc   1/1     Running   0          2m45s
+(.devops) Vijeshs-Air:project-ml-microservice-kubernetes vijesh$ ./run_kubernetes.sh
+Error from server (AlreadyExists): pods "udacitymicrosvc" already exists
+NAME              READY   STATUS    RESTARTS   AGE
+udacitymicrosvc   1/1     Running   0          2m55s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
